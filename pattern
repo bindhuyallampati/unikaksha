@@ -1,0 +1,98 @@
+# pattern 1
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print("*",end='')
+        print()
+        
+        # pattern 2
+        n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print(i,end='')
+    print('')        
+    
+    # pattern 3
+    n=int(input())
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print("*",end='')
+    print()
+    
+    # pattern 4
+    n=int(input())
+for i in range(1,n+1):
+    for sp in range(1,i):
+        print(' ',end='')
+    for j in range(1,n-i+2):
+        print("*",end='')
+    print()
+    
+    # pattern 5
+    n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if j>n-i:
+            print("*",end='')
+        else:    
+            print(" ",end='')
+    print()
+    
+    # pattern 6
+    n=int(input())
+for i in range(1,n+1):
+    for sp in range(1,i):
+        print(' ',end='')
+    for j in range(1,n-i+2):
+        print("*",end='')
+    print()
+    
+    # pattern 7
+    n=int(input())
+for i in range (1,n+1):
+    for j in range(1,n+1):
+        if i==1 or i==n or j==1 or j==n:
+            print("*",end='')
+        else:
+            print('',end=' ')
+    print(  )
+    
+    # pattern 8
+    n=int(input())
+t=(2*n)-1
+for i in range(n-1,-1,-1):
+    for i in range(n-i-1):
+        print(" ",end="")
+    for j in range(t):
+        print("*",end="")
+    t-=2
+    print()
+    
+    # pattern 9
+    n=int(input())
+t=(2*n)-1
+for i in range(n-1,-1,-1):
+    for i in range(n-i-1):
+        print(" ",end="")
+    for j in range(t):
+        print("*",end="")
+    t-=2
+    print()
+    #pattern 10
+    n=int(input())
+t=1
+for i in range(n-1,-1,-1):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(t):
+        print("*",end="")
+    t+=2
+    print()
+t=t-4
+for i in range(1,n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(t):
+        print("*",end="")
+    t-=2
+    print()
