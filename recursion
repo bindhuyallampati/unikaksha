@@ -1,0 +1,66 @@
+#binary evuilent of a number using recursion
+def convert(n):
+    if n>1:
+        convert(n//2)
+    print(n%2,end="")
+dec=int(input())
+convert(dec)
+
+# fibonacci series
+def fibo(n):
+    if n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return(fibo(n-1)+fibo(n-2))
+n=int(input())
+for i in range(1,n+1):
+    n=fibo(i)
+    print(n,end=" ")
+    
+    # odd or even
+    def ev(x):
+    if x%2==0:
+        return "Even!"
+    else:
+        return "odd!"
+        
+def eve(x):
+    if x==0:
+        return "Even!"
+    elif x==1:
+        return "Odd!"
+    else:
+        return eve(x-2)
+x=int(input())
+print(eve(x))
+
+# factorial
+def fac(n):
+    if n==0 or n==1:
+      return 1 
+    elif n==2:
+        return 2
+    else:
+        return(n*fac(n-1))
+n=int(input())
+print(fac(n))
+    
+    # lcm of two numbers
+    def lcm(a,b):
+    c=a*b
+    for i in range(1,c+1):
+        if((i%a)==0)and((i%b)==0):
+            return c
+a=int(input())
+b=int(input())
+print(lcm(a,b))
+
+#decimal to binary 
+def convert(a):
+    if(a>1):
+        convert(a//2)
+    print(a%2,end="")
+a=int(input())
+convert(a)
