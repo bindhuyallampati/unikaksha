@@ -1,0 +1,76 @@
+# create a list
+mylst= []
+num = int(input())
+for n in range(0, num):
+    element =int(input())
+    mylst.append(element) 
+print(mylst)
+
+# largest number in a list
+mylst= []
+num = int(input())
+for n in range(0, num):
+    element =int(input())
+    mylst.append(element) 
+print(max(mylst))
+
+# odd or even
+n=int(input())
+mylst=[]
+even=[]
+odd=[]
+for i in range(1,n+1):
+    mylst.append(int(input()))
+for i in mylst:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print("The even list",even)
+print("The odd list",odd)
+        
+        # array mean
+        n=int(input())
+a=[]
+sum=0
+for i in range(1,n+1):
+    a.append(int(input()))
+for i in a:
+    sum=sum+i
+a=sum/n
+print(a)
+
+# sort the list
+a=[]
+b=[]
+n=int(input())
+for i in range(1,n+1):
+    a.append(int(input()))
+m=int(input())
+for i in range(1,m+1):
+    b.append(int(input()))
+merge=a+b
+print("Sorted list is",sorted(merge))
+
+# remove duplicates
+n=int(input())
+a=[]
+for i in range(1,n+1):
+    a.append(int(input()))
+print(list(dict.fromkeys(a)))
+
+# second largest number
+n=int(input())
+a=[]
+for i in range(n):
+    a.append(int(input()))
+a.sort(reverse=True)
+print(a[1])
+
+#swap the number
+n=int(input())
+a=[]
+for i in range(n):
+    a.append(int(input()))
+a[0],a[n-1]=a[n-1],a[0]
+print(a)
