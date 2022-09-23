@@ -1,0 +1,33 @@
+# arithmetic operators
+def add(a,b):
+  return(a+b)
+def minus(a,b):
+  return(a-b)
+def multiply(a,b):
+  return(a*b)
+def mod(a,b):
+  return(a/b)
+def floordivision(a,b):
+  return(a//b)
+def rem(a,b):
+  return(a%b)
+a=int(input())
+b=int(input())
+print(add(a,b))
+print(minus(a,b))
+print(multiply(a,b))
+print(mod(a,b))
+print(floordivision(a,b))
+print(rem(a,b))
+
+# sqaure
+a=int(input())
+c=a**2
+print(c)
+
+# cube root
+a=int(input())
+c=a**3
+print(c)
+
+
